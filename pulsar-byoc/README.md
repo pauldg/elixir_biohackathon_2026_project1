@@ -136,7 +136,7 @@ Both platforms below ran the full playbook with SLURM on a single VM (Ubuntu 22.
 | --- | --- | --- | --- |
 | SURF Research Cloud | plain Ubuntu 22.04 workspace, 4 cores, 32 GB | `ssh <SRAM username>@<workspace IP>`; members of the CO admin group can `sudo` without a password | SLURM, CVMFS, Apptainer and Pulsar (relay mode) running |
 | de.NBI SimpleVM | "de.NBI default", 2 cores, 4 GB | `ssh -p <port> ubuntu@<gateway>`; set `ansible_port` in the inventory | SLURM, CVMFS, Apptainer and Pulsar (RabbitMQ mode) running |
-| HPC-UGent Tier-2 (VSC), `rootless.yml` | batch job on the donphan cluster, 4 cores, 16 GB, Rocky Linux 9 | `ssh <VSC id>@login.hpc.ugent.be` | Pulsar (RabbitMQ mode) connected to test.usegalaxy.be from the job; the job resubmitted itself |
+| HPC-UGent Tier-2 (VSC), `rootless.yml` | batch job on the donphan cluster, 4 cores, 16 GB, Rocky Linux 9 | `ssh <VSC id>@login.hpc.ugent.be` | Pulsar (RabbitMQ mode) connected to test.usegalaxy.be from the job; Show beginning and BWA-MEM (container and index from CVMFS) ran; the job resubmitted itself |
 
 [`deployments/`](deployments/) has the inventories, variables and commands we used.
 
